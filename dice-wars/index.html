@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minimum Viable Dice Wars</title>
+    <link rel="stylesheet" href="dice-wars.css">
+    <link rel="shortcut icon" 
+          href="Admiral-logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+  </head>
+  <body>
+    <main>
+      <h1>Minimum Viable Dice Wars</h1>
+      <h5>
+        <a href="https://github.com/mmaynar1/games/tree/master/dice-wars">Github</a> 
+      </h5>
+      <div id="grid" class="grid"></div>
+      <br>
+      <div id="players" class="players" style="width: 400px;">
+      </div>
+      <br>
+      <button class="button" id="endTurnButton" onclick="endTurn();" style="margin-left: 20%;" type="button">End Turn</button>
+
+      <!-- The Modal -->
+      <div id="modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="message"></p>
+          <button id="playButton" class="button" type="button" onclick="closeModalButton.click();">Play Again!</button>
+        </div>
+
+      </div>
+    </main>
+    <script src="team.js"></script>
+    <script src="coordinates.js"></script>
+    <script src="node.js"></script>
+    <script src="graphics.js"></script>
+    <script src="board.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
